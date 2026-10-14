@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artist at home | SoilArt</title>
+<meta name="description" content="Book a master potter to visit your home for a lesson, party or live demo.">
+<meta name="theme-color" content="#4A2E1F">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=DM+Sans:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+ <div class="wrap bar">
+  <a class="logo" href="index.html" aria-label="SoilArt home"><img src="img/logo.svg" alt="" width="46" height="46"><span class="wordmark">Soil<b>Art</b></span></a>
+  <nav class="nav" id="nav" aria-label="Main"><ul class="nav-list"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="shop.html">Shop</a></li><li><a href="learn.html">Learn</a></li><li><a href="at-home.html" aria-current="page">At Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <div class="tools"><button class="cart-btn" type="button" aria-label="Open cart"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" hidden>0</span></button>
+  <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span></span></button></div>
+ </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><h1 class="photo-text ph-turban" style="font-size:clamp(2.5rem,6.5vw,4.6rem)">An artist at your door</h1><p class="lead">A master potter brings the wheel, clay and tools to your home, office or event.</p></div><img src="img/pot-mini-vase.jpg" alt="A potter holding a tiny textured clay vase" width="260" height="340"></section>
+<section class="section" style="padding-top:2rem"><div class="wrap"><ol class="steps">
+ <li class="reveal"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><h3>1. Choose a day</h3><p>Pick a service, date and time slot.</p></li>
+ <li class="reveal"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V9l8-6 8 6v12zM10 21v-6h4v6"/></svg><h3>2. Artist arrives</h3><p>With a portable wheel, clay, aprons and tools.</p></li>
+ <li class="reveal"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg><h3>3. Create together</h3><p>Learn, play or watch a piece being made live.</p></li>
+ <li class="reveal"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg><h3>4. We fire and deliver</h3><p>Finished pieces come back glazed in about two weeks.</p></li>
+</ol></div></section>
+<section class="section" style="padding-top:0"><div class="wrap booking">
+ <form id="booking-form" novalidate aria-label="Book an artist at home">
+  <div class="field"><label for="service">Service</label><select id="service" name="service"><option value="">Choose a service...</option>
+   <option data-base="1500" data-extra="600" data-incl="1">Private pottery lesson (90 min)</option>
+   <option data-base="4500" data-extra="500" data-incl="6">Pottery party (2 hours, up to 6 included)</option>
+   <option data-base="3000" data-extra="0" data-incl="1">Live demo: watch a piece made at home</option>
+   <option data-base="1200" data-extra="0" data-incl="1">Repair visit (pick-up and assessment)</option></select><p class="err" role="alert"></p></div>
+  <div class="field"><label>Preferred artist</label><div class="artists">
+   <label class="artist"><input type="radio" name="artist" value="any" checked><span class="avatar" style="background:var(--umber)" aria-hidden="true">&#9733;</span><b>Any available</b><small>Fastest booking</small></label>
+   <label class="artist"><input type="radio" name="artist" value="Ravi Sharma"><span class="avatar" style="background:var(--soil)" aria-hidden="true">RS</span><b>Ravi Sharma</b><small>Wheel master, 30 yrs</small></label>
+   <label class="artist"><input type="radio" name="artist" value="Meera Joshi"><span class="avatar" style="background:var(--clay)" aria-hidden="true">MJ</span><b>Meera Joshi</b><small>Kids and parties</small></label>
+   <label class="artist"><input type="radio" name="artist" value="Imran Qureshi"><span class="avatar" style="background:var(--moss)" aria-hidden="true">IQ</span><b>Imran Qureshi</b><small>Glaze and repairs</small></label></div></div>
+  <div class="two"><div class="field"><label for="date">Date</label><input id="date" name="date" type="date"><p class="err" role="alert"></p></div>
+  <div class="field"><label for="slot">Time slot</label><select id="slot" name="slot"><option value="">Choose...</option><option>Morning, 9 to 12</option><option>Afternoon, 12 to 4</option><option>Evening, 4 to 8</option></select><p class="err" role="alert"></p></div></div>
+  <div class="two"><div class="field"><label for="guests">Number of people</label><input id="guests" name="guests" type="number" min="1" max="12" value="1"><p class="err" role="alert"></p></div>
+  <div class="field"><label for="b-phone">Mobile number</label><input id="b-phone" name="phone" type="tel" autocomplete="tel"><p class="err" role="alert"></p></div></div>
+  <div class="field"><label for="b-name">Your name</label><input id="b-name" name="name" autocomplete="name"><p class="err" role="alert"></p></div>
+  <div class="field"><label for="address">Address</label><textarea id="address" name="address" rows="3" autocomplete="street-address"></textarea><p class="err" role="alert"></p></div>
+  <div class="field"><label for="pin">PIN code</label><input id="pin" name="pin" inputmode="numeric" maxlength="6" autocomplete="postal-code"><p class="err" role="alert"></p></div>
+  <div class="estimate">Estimated price<output id="estimate" aria-live="polite"></output></div>
+  <button class="btn" type="submit">Request this visit</button>
+  <div class="success" id="booked" tabindex="-1" role="status"><strong></strong><span></span></div>
+ </form>
+ <aside class="aside-card reveal"><h3>Good to know</h3><ul><li>We confirm availability by phone within 24 hours.</li><li>Pay after the visit, by UPI or cash.</li><li>Pieces made at home are fired in our kiln and delivered.</li><li>Aprons, clay, tools and clean-up are included.</li><li>Needs a table and a power socket.</li></ul></aside>
+</div></section>
+</main>
+<footer class="site-footer">
+ <div class="wrap foot">
+  <div><a class="logo" href="index.html" style="color:#fff" aria-label="SoilArt home"><img src="img/logo.svg" alt="" width="46" height="46"><span class="wordmark">Soil<b>Art</b></span></a>
+   <p style="margin-top:1rem">Hand-thrown stoneware, glazed and fired in small batches since 2020. Shop, learn, or book an artist at home.</p>
+   <div class="social"><a href="#" aria-label="Instagram"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a><a href="#" aria-label="Facebook"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h2V4h-3a4 4 0 0 0-4 4v3H7v4h2v6h4v-6h3l1-4h-4V8z"/></svg></a><a href="#" aria-label="Pinterest"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="11" r="7"/><path d="M12 8v13M10 6c3-1 5 1 4 4"/></svg></a><a href="#" aria-label="Email"><svg class="" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div></div>
+  <div><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="shop.html">Shop</a></li><li><a href="learn.html">Learn</a></li><li><a href="at-home.html">At Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  <div><h3>Visit</h3><address style="font-style:normal">Kumbharwada<br>Old Indusry Area, Mumbai<br>Open Tue&ndash;Sat, 10&ndash;6</address></div>
+  <div><h3>Say hello</h3><ul><li><a href="mailto:hello@soilart.example">soilart@gmail.com</a></li><li>89765 64738</li></ul></div>
+ </div>
+ <div class="wrap legal">&copy; <span id="year">2026</span> SoilArt. All rights reserved.</div>
+</footer>
+<script src="js/main.js"></script><script src="js/validate.js"></script><script src="js/cart.js"></script><script src="js/booking.js"></script>
+</body>
+</html>
